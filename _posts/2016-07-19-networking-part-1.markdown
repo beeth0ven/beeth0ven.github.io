@@ -14,14 +14,14 @@ categories: jekyll update
 
 先看一下我们的 Model ： 
 
-{% highlight swift %}
+```swift
 struct Repository {
     var name: String! 			// 库的名称
     var language: String!		// 汇编语言
     var description: String!	// 描述
     var url: String!			// 链接地址
 }
-{% endhighlight %}
+```
 
 然后看一下我们的 ViewController : 
 	
