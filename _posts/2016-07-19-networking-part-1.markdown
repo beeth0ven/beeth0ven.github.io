@@ -199,6 +199,7 @@ extension Repository {
         didFail: { error in print(error) }
     ...
 ```
+
 ## 结尾
 
 这就是网络请求最基本的形态，其实他和本地取值区别并不大。
