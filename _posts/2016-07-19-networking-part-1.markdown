@@ -1,4 +1,11 @@
-# 基础
+
+---
+layout: post
+title:  "基础"
+date:   2016-07-19 10:45:49 +0800
+categories: jekyll update
+---
+
 
 目前有大量 App 都需要进行网络请求，这里讨论一下如何优化网络请求。
 
@@ -8,14 +15,14 @@
 
 先看一下我们的 Model ： 
 
-```swift
+{% highlight swift %}
 struct Repository {
     var name: String! 			// 库的名称
     var language: String!		// 汇编语言
     var description: String!	// 描述
     var url: String!			// 链接地址
 }
-```
+{% endhighlight %}
 
 然后看一下我们的 ViewController : 
 	
