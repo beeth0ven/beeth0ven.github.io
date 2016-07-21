@@ -1,10 +1,7 @@
-HTML5 Muffin chocchip steps
-============================
+swift
+=====
 
-Run bundle install
+A clean Minimal Blog theme for Jekyll , built with Bootswatch 
 
-	bundle install
 
-Run jekyll
-
-	jekyll
+![ThisIsADemoPhoto](/images/swift.png)

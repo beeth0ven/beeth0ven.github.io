@@ -1,75 +1,54 @@
 ---
 layout: default
-title: Mainpage
+index: true
 ---
-<!-- Content
-    ================================================== -->
-  <div class="content">
-    <main class="container">
-    	<div class="row-fluid">
-    		<section class="content">
-    		  <h1>Ipsum List</h1>
-          <div class="sub-title">A list of interesting lorem ipsums I found on the web</div>
-    		</section>
-    		<ul class="entries">
-    		{% for post in paginator.posts %}
-    		  <li>
-    		    <a href="{{ post.url }}">
-    		        <h3>{{ post.title }}</h3>
-                <time>{{ post.date | date: "%d %B %Y" }}</time>
-                <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
-    		    </a>
-    		  </li>
-    		{% endfor %}
-    		</ul>
-    	</div>
-      
-      <div id="post-pagination">
-        {% if paginator.previous_page %}
-        <p class="prev">
-          {% if paginator.previous_page == 1 %}
-          <a href="/">Previous</a>
-          {% else %}
-          <a href="/page{{paginator.previous_page}}"> Previous</a>
-          {% endif %}
-        </p>
-        {% else %}
-<!--         <p class="prev disabled">
-          <span>Previous</span>
-        </p> -->
-        {% endif %}
 
-        <ul class="pages">
-          <li class="page">
-            {% if paginator.page == 1 %}
-<!--             <span class="current-page">1</span> -->
-            {% else %}
-<!--             <a href="/">1</a> -->
-            {% endif %}
-          </li>
 
-          {% for count in (2..paginator.total_pages) %}
-          <li class="page">
-            {% if count == paginator.page %}
-            <span class="current-page">{{count}}</span>
-            {% else %}
-            <a href="/page{{count}}">{{count}}</a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+              <!-- Blog Post Links -->
+              <div class="blog-post-small">
+                {% for post in site.posts %}
+                  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  <p><i class="fa fa-calendar"></i> &nbsp;{{ post.date | date: "%b %-d, %Y" }} | {% if site.disqus_short_name and page.comments != false and site.disqus_show_comment_count == true %}
+         <a href="{% if page.index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+        {% endif %}</p>
+                  {% if post.content contains '<!-- more -->' %}
+                    <p>{{ post.content | split:'<!-- more -->' | first }}
+                      <br><br>
+                      <a href="{{ post.url }}"class="btn btn-primary btn-sm">Read More</a>
+                    </p>
+                  {% else %}
+                    {{ post.content }}
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <!-- End Blog Post Links -->
+            </div>
+            <!-- SideBar -->
+            <div class="col-md-3">
+              {% if site.feedburner_username %}
+               <div class="panel panel-primary" style="margin-top:10%;">
+                  <div class="panel-body">
+                    
+                     <form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri={{site.feedburner_username}}', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                        <div class="input-group">
+                        <input type="text" class="form-control" name="email"/>
+                        <input type="hidden" value="maangalabs" name="uri"/>
+                        <input type="hidden" name="loc" value="en_US"/>
+                        <span class="input-group-btn">
+                          <input type="submit" class="btn btn-primary" value="Subscribe Us" />
+                        </span>
+                      </div>
+                      <p><a href="http://feeds.feedburner.com/{{site.feedburner_username}}"><img style="margin-left:auto;margin-right:auto;" src="http://feeds.feedburner.com/~fc/{{site.feedburner_username}}?bg=007196&amp;fg=FFFFFF&amp;anim=1" height="26" width="88" style="border:1;" alt="" /></a></form>
 
-        {% if paginator.next_page %}
-        <p class="next">
-          <a href="/page{{paginator.next_page}}">Next</a>
-        </p>
-        {% else %}
-<!--         <p class="next disabled">
-          <span>Next</span>
-        </p> -->
-        {% endif %}
-      </div>
+                  </div>
 
-    </main>
-  </div>
+                </div>
+                {% endif %}
+            </div>
+            <!-- End Sidebar -->
+            <div class="col-md-1"></div>
+         </div>
 
