@@ -1,7 +1,6 @@
-swift
-=====
+typewriter
+==========
 
-A clean Minimal Blog theme for Jekyll , built with Bootswatch 
+A simple and beautiful theme for Jekyll.
 
-
-![ThisIsADemoPhoto](/images/swift.png)
+![Screenshot](https://raw.githubusercontent.com/alixedi/typewriter/master/images/screenshot.png)
