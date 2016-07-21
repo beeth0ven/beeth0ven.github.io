@@ -1,22 +1,7 @@
-# Site settings
-title: "Typewriter"
-description: "So I was feeling nostalgic."
-baseurl: ""
-url: "http://alixedi.github.io"
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-highlighter: pygments
-paginate: 3
+auto: true # automatically update your jekyll
+server: true # runs a local server
+paginate: 10 # pagination basted on number of posts
+exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
 
-# Links
-links:
-  - title: "abt"
-    url: /about
-  - title: "twt"
-    url: http://twitter.com/alixedi
-  - title: "git"
-    url: http://github.com/alixedi
-  - title: "rss"
-    url: /feed.xml
