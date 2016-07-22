@@ -1,18 +1,41 @@
+dbyll
+=====
 
-**This is a simple type blog theme made with Jekyll**
+Open source stylish, minimalistic theme for jekyll.  
+Demo: http://dbtek.github.io/dbyll/
 
-# Features
+## New
+- Dbyll for Ghost is now available. Get it [here](https://github.com/dbtek/dbyll-ghost) now.
+- :new: Check out [Paper](https://github.com/dbtek/paper), new Material Design Jekyll theme.
 
-* Pinot-Boilerplate
-* Pinot Buttons components
-* Normalize css
-* Modernizr added
-* Parallax Effect
-* Responsive
-* Bootstrap Included
-* Sass made
+### Features
+- Responsive layout.
+- Supports tags and categories.
+- Social profile and bio of author.
+- Bootstrap based.
+- Glyphicon and Font-Awesome Icons.
+- Pagination.
+- Syntax highlighting with pygments.
+- Disqus comments.
+- :new: Custom sidebar background image.
 
 
----
+### Download
+* [Download dbyll](https://github.com/dbtek/dbyll/archive/master.zip)
 
-This is Metaphor.
+### Install
+- You need to have [ruby](https://www.ruby-lang.org/en/documentation/installation/) installed in your system.
+- Install bundler which helps in specifying and installing dependencies of any Ruby project. ```gem install bundler```
+- Go to the root of the repo and run this - ```bundle install```
+- Then - ```bundle exec jekyll serve```
+
+### Screenshots
+![dbyll-screenshot](assets/media/dbyll-ss.png)
+
+### License
+- [MIT](http://opensource.org/licenses/MIT)
+
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/dbyll/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

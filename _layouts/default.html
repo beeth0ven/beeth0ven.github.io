@@ -1,29 +1,23 @@
+---
+theme :
+  name : dbyll
+---
+{% include default.html %}
 
-<!DOCTYPE html>
+{% if site.google_analytics %}
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+  _gaq.push(['_trackPageview']);
 
-<html>
-  {% include head.html %}
-
-  <body>
-  <!--[if lt IE 7]>
-      <strong>It seems your browser is quite a bit old, to get latest browser go to this link <a href="http://browsehappy.com">BROWSE HAPPY </a> And get the happy face</strong>
-  <![endif]-->
-
-  {% include header.html %}
-
-    <div class="container">
-
-
-        {{ content }}
-
-
-
-    {% include footer.html %}
-
-    </div>
-    {% include scriptHolder.html %}
-
-
-  </body>
-
-</html>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+{% endif %}
