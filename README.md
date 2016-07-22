@@ -1,25 +1,16 @@
-## My Stack Problems
+A [Jekyll](https://jekyllrb.com/) blog template made for simple, readable snippets of your brain drippings.
 
-> This project forked and has been modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll), and the search posts using [Super Search](https://github.com/chinchang/super-search)
+[DEMO](http://adueck.github.io/cayman-blog/)
 
-### Demo
-* [https://agusmakmun.github.io](https://agusmakmun.github.io)
+To get this going follow these simple steps:
 
-#### Feature
+1. Fork, clone, or download the repository
+2. Edit <code>_config.yml</code>
+3. If you want, swap `img/cover.jpg` for your own header image
+3. Fill up the `_posts` folder with whatever you want to say
+4. run <code>jekyll build</code> and then <code>jekyll serve</code>  
+note: This will require the `jekyll-paginate` gem `$ gem install jekyll-paginate`
 
-* Sitemap and XML Feed
-* Paginations in homepage
-* Posts under category
-* Realtime Search Posts _(title & description)_ under query.
-* Related Posts
-* Highlight pre
-* Next & Previous Post
-* Disqus comment
-* Projects
-* Project page
-* Share on social media
-* Google analytics
+You can easily host your blog for free on [GitHub Pages](https://pages.github.com/)
 
-#### Screenshot
-
-![Screenshot Post Page](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/screenshot-post-page.png  "Screenshot Post Page")
+I made this Jekyll theme by adapting and modifying the [Cayman Theme](https://github.com/jasonlong/cayman-theme) by [Jason Lang](https://github.com/jasonlong), which is licensed under a [Creative Commons Attribution 4.0 International license](http://creativecommons.org/licenses/by/4.0/).

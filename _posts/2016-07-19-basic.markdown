@@ -1,8 +1,6 @@
 ---
 layout: post
-title:  " 基础"
-date:   2016-07-19 03:43:45 +0700
-categories: [swift, codefights]
+title: 基础
 ---
 
 目前有大量 App 都需要进行网络请求，这里讨论一下如何优化网络请求。
