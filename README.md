@@ -1,24 +1,77 @@
-White Paper
-============
+Contrast
+========
 
-White Paper is a jekyll theme for tech blogs. It is clean and simple with good semantic
-structure.
+[Demo](http://niklasbuschmann.github.io/contrast)
 
-![white-paper image](https://i.cloudup.com/rmZjQ83vRh-2000x2000.png)
+![screenshot](https://cloud.githubusercontent.com/assets/4943215/9838597/ef499f66-5a61-11e5-8ad0-b2bb71383833.png)
 
-## Usage:
 
-- Install Jekyll from here(http://jekyllrb.com/)
-- Fork the project.
-- Change the fields in _config.yml
-- Change the links in header.html.s
+## Features
 
-Test the website live while editing the code:
+ - mobile first
+ - syntax highlighting
+ - [disqus](https://disqus.com/) / [isso](http://posativ.org/isso/) integration
+ - customizable
+ - valid HTML5
 
-```sh
-jekyll server --watch
+Please note: Create a *master*-branch if you want to use this theme with *.github.io.
+
+## Getting Started
+
+If you're completely new to Jekyll, I recommend checking out the documentation at <http://jekyllrb.com> or there's a tutorial by [Smashing Magazine](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/).
+
+### Installing Jekyll
+
+If you don't have Jekyll already installed, you will need to go ahead and do that.
+
+```
+$ gem install jekyll
 ```
 
-## Issues:
+#### Verify your Jekyll version
 
-Report issues or feature request [here](https://github.com/vinitkumar/white-paper/issues).
+It's important to also check your version of Jekyll since this project uses Native Sass which
+is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
+
+```
+$ jekyll -v
+# This should be jekyll 2.0.0 or later
+```
+
+### Fork, then clone
+
+Fork the repo, and then clone it so you've got the code locally.
+
+### Modify the _config.yml
+
+The `_config.yml` located in the root of the Pixyll directory contains all of the configuration details
+for the Jekyll site.
+
+### Jekyll Serve
+
+Then, start the Jekyll Server. I always like to give the `--watch` option so it updates the generated HTML when I make changes.
+
+```
+$ jekyll serve --watch
+```
+
+Now you can navigate to `localhost:4000` in your browser to see the site.
+
+### Using Github Pages
+
+You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
+## Thanks to the following:
+
+* [Jekyll](http://jekyllrb.com)
+* [Github Pages](https://pages.github.com/)
+* [Richard Leland: pygment](https://github.com/richleland/pygments-css)
+* [mrdoob: three.js](https://github.com/mrdoob/three.js/)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+* [Paul D. Hunt: Source Sans Pro](https://plus.google.com/108888178732927400671/about)
+* [Victor Gaultney: Gentium Basic](https://profiles.google.com/victorgaultneytype/about)
+* [John Otander: Pixyll](https://github.com/johnotander/pixyll/)
