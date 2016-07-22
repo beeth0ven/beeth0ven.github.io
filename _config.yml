@@ -1,29 +1,40 @@
-title: Book
-description: A simple Jekyll theme
-url: # site url
-avatar: # path/to/avatar for index page. e.g. /assets/img/avatar.jpg
-favicon: # path/to/favicon for site. e.g. /assets/img/favicon.ico
-google_analytics: # google analytics id
-disqus_shortname: # disqus_shortname for disqus comment system
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Content for about page.
-# Each paragraph will be a <p> tag which is inserted to about
-# page. text_align is used to align the text. Default is left.
-# Other two values are center and right. If there are some links
-# in your paragraph, use '?link?' to take the place of a link.
-# And then write the real link under links. name is the link
-# text. url is the link. when external is set as true, then
-# a new whidow will be open when link is clicked.
-#
-about:
-  - paragraph: ?link?, a simple Jekyll theme. Built by ?link?
-    text_align: center
-    links:
-      - name: Book
-        url: https://github.com/kkninjae/book
-        external: true
-      - name: Lang Liu
-        url: http://kkninjae.com/about/
-        external: false
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: kramdown
+disqus: dbyll
+google_analytics: dbyll
+title: dbyll
 
-    
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: dbyll
+
+description: Stylish Jekyll Theme
+author:
+  name: dbyll
+  email: dbyll@ismaildemirbilek.com
+  github: dbtek
+  twitter: dbtek
+  pinterest: asd123
+  linkedin: asd123
+  bio: Your stylish, minimalist theme!
+  email_md5: 726351295ec82e145928582f595aa3aa
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+gems:
+  - jekyll-paginate
