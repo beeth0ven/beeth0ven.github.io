@@ -2,12 +2,8 @@
 layout: post
 title: "基础"
 date: 2014-12-19
-backgrounds:
-    - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/code-screen.jpg
-    - https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/the-desk.jpg
-thumb: https://dl.dropboxusercontent.com/u/18322837/cdn/Streetwill/thumbs/coding.jpg
-categories: development work
-tags: home work office coding design
+comments: true
+categories:
 ---
 
 目前有大量 App 都需要进行网络请求，这里讨论一下如何优化网络请求。
