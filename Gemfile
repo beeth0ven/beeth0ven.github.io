@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-
-gem 'sass'
+source "https://rubygems.org"
+gem 'rouge'
 gem 'jekyll'
-gem 'nokogiri'
+gem 'jekyll-paginate'
