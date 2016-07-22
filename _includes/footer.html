@@ -1,63 +1,41 @@
-<section class="footer ">
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+        {% for post in site.posts | limit:3 %} <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title | strip_html | strip_newlines | truncate: 30 }} </a></span>
+              <span class="date">{{post.date | date: "%b %d, %Y" }}</span>
+            </li>
+        {% endfor %}
+      </ol>
 
-    <div class="row">
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:{{ site.owner.email }}"><span class="foot-link">Contact Me</span></a></li>
 
-        <div class="col-sm-offset-3 col-md-offset-3 col-md-6 text-center">
-            {% if site.github_username %}
-      <span>
-        <a class="header-link" href="https://github.com/{{ site.github_username }}" target="_blank">
-            <i class="fa fa-2x fa-github-square 3x"></i>
-        </a>
-      </span>
+            {% if site.owner.twitter %}
+            <li><a id="twit" href="http://twitter.com/{{ site.owner.twitter }}" target="_blank"><span class="foot-link">@{{ site.owner.twitter }}</span></a></li>
             {% endif %}
 
 
-            {% if site.twitter_username %}
-      <span>
-        <a class="header-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-            <i class="fa fa-2x fa-twitter 3x"></i>
-        </a>
-      </span>
+            {% if site.owner.dribbble %}
+            <li><a id="drib" href="http://dribbble.com/{{ site.owner.dribbble }}" target="_blank"><span class="foot-link">Dribbble</span></a></li>
             {% endif %}
-
-            {% if site.portfolio_url %}
-      <span>
-        <a class="header-link" href="{{ site.portfolio_url }}"  target="_blank">
-            <i class="fa fa-2x fa-laptop"></i>
-
-        </a>
-      </span>
-            {% endif %}
-
-
-            {% if site.facebook_username %}
-      <span>
-        <a class="header-link" href="https://facebook.com/{{ site.facebook_username }}"  target="_blank">
-            <i class="fa fa-2x fa-facebook-square "></i>
-        </a>
-      </span>
-            {% endif %}
-        </div>
-
+        </ul>
     </div>
-  <div class="row">
-  <div class="col-sm-offset-2 col-sm-5 col-md-offset-5 col-md-6 ">
-    <small><a href="http://www.mahabubislam.com">Mahabub I. </a><sup>&reg </sup>--- powerd by <a href="http://jekyllrb.com/">Jekyll</a></small>
-  </div>
+    </aside>
+    <small>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
 
- 
-      <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'prioblog'; // required: replace example with your forum shortname
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="{{ site.url }}/assets/js/retina.min.js"></script>
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
+  <!-- Custom JS -->
+  <script src="{{ site.url }}/assets/js/scripts.js"></script>
 
 
-</section>
+  </body>
+</html>
