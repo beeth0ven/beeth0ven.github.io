@@ -1,60 +1,35 @@
+highlighter: pygments
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 4000
+safe: true
+url: http://biomadeira.github.io/vitae
+author: Fábio Madeira
 
-# SEO settings
-title: Simplest
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
-baseurl: "/simplest"
-# baseurl: null
+# edit this section with your information
+# biomadeira.github.io - all contents run on /vitae/
+# for a normal use at the base of the server change it to "/"
+baseurl: /vitae/
+title: Chris Turner's Resume
+name: Chris Turner
+email: christurner@me.com
+email_full: mailto:youremail@me.com
+website: github.io/sustain
+website_full: https://biomadeira.github.io/sustain
+github: trending
+twitter: twitter
+tel: +44 0000 000000
+tel_full: tel:+440000000000
+google_maps: 'https://www.google.co.uk/maps/place/44+Perth+St,+Edinburgh,+Edinburgh+City+EH3+5BL'
+address: 44 Perth Street
+postcode: EH3 5BL
+city: Edinburgh
+country: United Kingdom
+google_analytics: UA-69300817-1
 
-google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/simplest
-disqus_shortname: "nandothemes"
-
-# Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : pygments
-
-paginate: 4
-paginate_path: "/page/:num/"
-comments: true
-
-source: source
-destination: _site
-
-# Sass configuration
-sass:
-  sass_dir: assets/scss
-  style: compressed # expanded
-
-# Author settings
-author:
-  name     : Fernando Moreira
-  job      : Frontend Engineer
-  bio      : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb    : /images/author.jpg
-  email    : nandomoreira.me@gmail.com
-  url      : http://nandomoreira.me
-  github   : http://github.com/nandomoreirame
-  twitter  : http://twitter.com/nandomoreirame
-  facebook : http://facebook.com/fernando.dev
-  linkedin : http://linkedin.com/in/nandomoreirame
-
-# social settings
-og_locale: "pt_BR"
-twitter_card: "summary_large_image"
-twitter_site: "@nandomoreirame"
-
-gems:
-  - bourbon
-  - jekyll-paginate
-
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
+# needed for travis-ci build
+exclude: [vendor]
