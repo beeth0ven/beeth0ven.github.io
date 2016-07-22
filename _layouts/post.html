@@ -1,7 +1,15 @@
 ---
-layout: default
+layout: blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-{{ content }}
+<article class="post">
+ <div class="space-extra-small">
+ </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html %}
+</article>
+
