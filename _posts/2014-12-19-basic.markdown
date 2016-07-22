@@ -1,9 +1,10 @@
 ---
-layout: default
-img: ipad.png
-category: Services
-title: 基础
-description: |
+layout: post
+title:  "基础"
+date:   2015-01-12 23:25:05
+author: Mahabub Islam
+categories: First Blog
+image: true
 ---
 
 目前有大量 App 都需要进行网络请求，这里讨论一下如何优化网络请求。
