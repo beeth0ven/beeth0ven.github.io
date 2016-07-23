@@ -7,23 +7,23 @@ highlighter: pygments
 markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
-title: dbyll
+title: Beeth0ven
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Beeth0ven
 
-description: Stylish Jekyll Theme
+description: Beeth0ven's Blog!
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
-  twitter: dbtek
-  pinterest: asd123
-  linkedin: asd123
+  name: Beeth0ven
+  email: m13477051442@gmail.com
+  github: Beeth0ven
+  twitter: luojie6
+  # pinterest: asd123
+  # linkedin: asd123
   bio: Your stylish, minimalist theme!
   email_md5: 726351295ec82e145928582f595aa3aa
 
